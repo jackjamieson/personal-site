@@ -1,0 +1,153 @@
+body{
+	background: #5ca6ca;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: #515355;
+	margin-top:30px;
+
+}
+
+#top{
+	background: #e8edf1;
+	width:300px;
+	height:150px;
+	text-align: center;
+	margin:0 auto;
+	font-weight: bold;
+
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+
+}
+
+#bottom{
+	background: #fff;
+	width:300px;
+	height:190px;
+	margin:0 auto;
+	text-align: center;
+	padding-top: 5px;
+
+	-webkit-border-bottom-left-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+
+	-moz-border-radius-bottomleft: 3px;
+	-moz-border-radius-bottomright: 3px;
+}
+
+.round {
+	margin-top:10px;
+	width:25%;
+	border-radius: 120px;
+	-webkit-border-radius: 120px;
+	-moz-border-radius: 120px;
+}
+
+.loc {
+	width:6%;
+
+}
+.currentLoc {
+	font-size: 10pt;
+	margin-right:17px;
+	font-weight: normal;
+
+}
+
+.topbutt {
+	display:block;
+	width:55px;
+	height:55px;
+	border-radius:50px;
+	font-size:20px;
+	color:#fff;
+	line-height:100px;
+	text-align:center;
+	text-decoration:none;
+	background:#a7d384;
+	background-image:url(img/resume.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin:0 auto;
+}
+
+.topbutt:hover
+{
+	opacity: .8;
+}
+
+.botbutt {
+	display:block;
+	width:55px;
+	height:55px;
+	border-radius:50px;
+	font-size:20px;
+	color:#fff;
+	line-height:100px;
+	text-align:center;
+	text-decoration:none;
+	background:#f5a156;
+	background-image:url(img/proj.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin:0 auto;
+	margin-top:53px;
+}
+
+.botbutt:hover
+{
+	opacity: .8;
+}
+
+.leftbutt {
+	width:55px;
+	height:55px;
+	border-radius:50px;
+	color:#fff;
+	text-align:center;
+	text-decoration:none;
+	background:#a1a9ab;
+	background-image:url(img/contact.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	float:left;
+	margin-left: 70px;
+}
+
+.leftbutt:hover
+{
+	opacity: .8;
+}
+
+.rightbutt {
+	width:55px;
+	height:55px;
+	border-radius:50px;
+	color:#fff;
+	text-align:center;
+	text-decoration:none;
+	background:#1c9cf1;
+	background-image:url(img/git.png);
+	background-position: center;
+	background-repeat: no-repeat;
+
+	float:left;
+	margin-left:53px;
+}
+
+.rightbutt:hover
+{
+	opacity: .8;
+}
+
+.projects {
+	font-size:10pt;
+	
+}
+
+.projects a {
+color: 	#1c9cf1;
+}
+
