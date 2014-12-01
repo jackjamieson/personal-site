@@ -1,36 +1,35 @@
 #sidebar {
-	position: fixed;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	width: 20rem;
-	text-align: left;
-	background-color: #1B3550;
-	color:white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 20rem;
+    text-align: left;
+    background-color: #1B3550;
+    color:white;
 }
 
 .header{
-	position: absolute;
-	font-size:3em;
-	font-weight: bold;
-	padding:15px;
+    position: absolute;
+    font-size:3em;
+    font-weight: bold;
+    padding:15px;
 }
 
 .content {
-	position:relative;
-	padding-left: 22rem;
-	padding-top: 1rem;
-	font-size: 1.5em;
+    padding-left: 22rem;
+    padding-top: 1rem;
+    font-size: 1.5em;
 
-	width:48rem;
+    width:48rem;
 }
 
 h1 {
-	font-size: 2em;
+    font-size: 2em;
 }
 
 body{
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
 
 }
 
@@ -38,62 +37,77 @@ body{
 
 .photo {
 
-	width: 150px;
-	height: 150px;
-	border-radius: 150px;
-	-webkit-border-radius: 150px;
-	-moz-border-radius: 150px;
-	border:4px solid #fff;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    border:4px solid #fff;
 
 }
 #nav {
-	margin-top:1rem;
-	position: absolute;
-	font-size: 16pt;
-	line-height: 24pt;
+    margin-top:1rem;
+    position: absolute;
+    font-size: 16pt;
+    line-height: 24pt;
+    
 }
 #nav a{
 
-	color:#fff;
-	border-bottom: 1px dotted #fff;
+    color:#fff;
+    border-bottom: 1px dotted #fff;
 
 }
 #nav a:hover {
-	border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #fff;
 
 }
 
 .currentLoc {
 
-	font-size:14pt;	
+    font-size:14pt;	
 }
 
 a{
-	border-bottom: 1px dotted #000;
-	text-decoration: none;
-	color:#000;
+    border-bottom: 1px dotted #000;
+    text-decoration: none;
+    color:#000;
 
 }
 
 a:hover {
-	border-bottom: 1px solid #000;
-	text-decoration: none;
-	color:#000;
+    border-bottom: 1px solid #000;
+    text-decoration: none;
+    color:#000;
+}
+
+.imga {
+    border: none !important;
 }
 
 .projItem {
-display: inline-block;
-	font-size:1rem;
-	text-align: center;
+    display: inline-block;
+    font-size:1rem;
+    text-align: center;
+    margin-top:10px;
 }
 
 
 .proj {
-	width:70%;
-	border: 5px solid #000;
-	opacity: .8;
+    width:70%;
+    border: 5px solid #000;
+    opacity: .8;
 }
 
 .proj:hover {
-	opacity: 1;
+    opacity: 1;
+}
+
+#logos{
+    margin-top:3rem;
+    
+}
+
+#logos img {
+ padding:5px;   
 }
