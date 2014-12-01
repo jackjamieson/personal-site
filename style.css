@@ -1,25 +1,99 @@
+#sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 20rem;
+	text-align: left;
+	background-color: #1B3550;
+	color:white;
+}
+
+.header{
+	position: absolute;
+	font-size:3em;
+	font-weight: bold;
+	padding:15px;
+}
+
+.content {
+	position:relative;
+	padding-left: 22rem;
+	padding-top: 1rem;
+	font-size: 1.5em;
+
+	width:48rem;
+}
+
+h1 {
+	font-size: 2em;
+}
+
 body{
-	font-family: "Lucida Console", Monaco, monospace;
-	margin-top:30px;
-    margin-left:20px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
 
 }
 
-.round {
-	margin-top:10px;
-    width:7em;
-	border-radius: 120px;
-	-webkit-border-radius: 120px;
-	-moz-border-radius: 120px;
+
+
+.photo {
+
+	width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	border:4px solid #fff;
+
+}
+#nav {
+	margin-top:1rem;
+	position: absolute;
+	font-size: 16pt;
+	line-height: 24pt;
+}
+#nav a{
+
+	color:#fff;
+	border-bottom: 1px dotted #fff;
+
+}
+#nav a:hover {
+	border-bottom: 1px solid #fff;
+
 }
 
-.loc {
-	width:1em;
-
-}
 .currentLoc {
-	font-size: 10pt;
-	font-weight: normal;
+
+	font-size:14pt;	
+}
+
+a{
+	border-bottom: 1px dotted #000;
+	text-decoration: none;
+	color:#000;
 
 }
 
+a:hover {
+	border-bottom: 1px solid #000;
+	text-decoration: none;
+	color:#000;
+}
+
+.projItem {
+display: inline-block;
+	font-size:1rem;
+	text-align: center;
+}
+
+
+.proj {
+	width:70%;
+	border: 5px solid #000;
+	opacity: .8;
+}
+
+.proj:hover {
+	opacity: 1;
+}
