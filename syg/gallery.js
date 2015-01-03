@@ -7,6 +7,7 @@ var EVERY = 3;//Create a new line every nth video
 var playListURL = 'http://gdata.youtube.com/feeds/api/playlists/' + playList + '?v=2&alt=json&callback=?';
 var videoURL= 'http://www.youtube.com/embed/';//Will append videos to this link
 
+
 function run(){
 	$.getJSON(playListURL, function(data) {
 		var list_data="";
@@ -45,7 +46,9 @@ function run(){
 	});
 }
 
+$(document).ready(function() {
 run();//Start the script
+});
 
 
 //Load the new video when the thumbnail is clicked
