@@ -222,7 +222,7 @@ a span {display: none; position: absolute; color: #fff; background: #000; paddin
     }
 }
 
-@media  (max-width: 340px) {
+@media  (max-width: 400px) {
 
     a:hover span {display:none;}
     a span {}
