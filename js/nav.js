@@ -16,7 +16,7 @@ divNav.innerHTML = 	'' +
 	'&#8594; <a href="index.html">About</a><br>' +
 	'&#8594; <a href="resume.pdf">Resume</a><br>' +
 	'&#8594; <a href="projects.html">Projects</a><br>' +
-    '<div id="logos"><a href="https://github.com/jackjamieson" target="_blank" class="imga"><img src="img/git.png"/></a> ' + ' <a href="https://www.linkedin.com/pub/jack-jamieson/3a/256/367" target="_blank" class="imga"><img src="img/in.png"/></a> '+ ' <a href="https://twitter.com/jamieson_jack" target="_blank" class="imga"><img src="img/tw.png"/></a></div>' ;
+    '<div id="logos"><a href="https://github.com/jackjamieson" class="imga"><img src="img/git.png"/></a> ' + ' <a href="https://www.linkedin.com/pub/jack-jamieson/3a/256/367"  class="imga"><img src="img/in.png"/></a> '+ ' <a href="https://twitter.com/jamieson_jack"  class="imga"><img src="img/tw.png"/></a></div>' ;
 
 
 //Google Analytics
@@ -27,5 +27,3 @@ divNav.innerHTML = 	'' +
 
   ga('create', 'UA-40920141-1', 'auto');
   ga('send', 'pageview');
-
-
