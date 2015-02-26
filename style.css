@@ -119,7 +119,7 @@ a:hover span {display: block; text-align: left; z-index: 2;}
 a span {display: none; position: absolute; color: #fff; background: #000; padding: 5px; width: 500px; margin-top:240px; margin-left:20px}
 
 
-@media  (max-width: 1140px) {
+@media  (max-width: 640px) {
 
     a:hover span {display:none;}
     a span {}
@@ -163,6 +163,110 @@ a span {display: none; position: absolute; color: #fff; background: #000; paddin
         font-size: 1.5em;
         padding-left: 1rem;
         padding-bottom:2rem;
+        margin-top: 400px;
+
+
+    }
+}
+
+
+@media  (max-width: 1140px) {
+
+    a:hover span {display:none;}
+    a span {}
+
+    #logos{
+        margin-top:15px;
+
+    }
+
+    .header{
+        position: relative;
+        font-size:3em;
+        font-weight: bold;
+        padding:8px;
+        background-color: #1B3550;
+    }
+
+    #nav {
+        margin-top:.5rem;
+        position:relative;
+        font-size: 16pt;
+        line-height: 24pt;
+
+
+
+    }
+
+    #sidebar {
+
+
+        width: 100%;
+        position:relative;
+        text-align: center;
+        background-color: #1B3550;
+        color:white;
+        max-height:50px;
+    }
+
+    .content {
+        background:white;
+        width:90%;
+        padding-top: 1rem;
+        font-size: 1.5em;
+        padding-left: 1rem;
+        padding-bottom:2rem;
+        margin-top: 350px;
+
+
+    }
+}
+
+@media  (max-width: 340px) {
+
+    a:hover span {display:none;}
+    a span {}
+
+    #logos{
+        margin-top:15px;
+
+    }
+
+    .header{
+        position: relative;
+        font-size:3em;
+        font-weight: bold;
+        padding:8px;
+        background-color: #1B3550;
+    }
+
+    #nav {
+        margin-top:.5rem;
+        position:relative;
+        font-size: 16pt;
+        line-height: 24pt;
+
+
+    }
+
+    #sidebar {
+
+
+        width: 100%;
+        position:relative;
+        text-align: center;
+        background-color: #1B3550;
+        color:white;
+    }
+
+    .content {
+        background:white;
+        width:90%;
+        padding-top: 1rem;
+        font-size: 1.5em;
+        padding-left: 1rem;
+        padding-bottom:2rem;
+        margin-top: 420px;
 
 
     }
