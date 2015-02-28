@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<title>Zoom Test</title>
+<!-- jack, jamieson -->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"</script>
+</head>
+
+<html>
+    <body>
+        <script src='js/jquery.zoom.min.js'></script>
+        <script>
+            $(document).ready(function(){
+                $('#ex3').zoom({ on:'click' });			 
+            });
+        </script>
+        <span class='zoom' id='ex3'>
+            <img src='http://armednyc.com/wp-content/uploads/2014/10/Infamous-Detail.png'/>
+            <p>Click to Zoom</p>
+        </span>
+    </body>
+
+</html>
