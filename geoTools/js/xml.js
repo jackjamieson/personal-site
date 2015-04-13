@@ -7,6 +7,29 @@ var zipFile; // the generated zip
 
 var isUsingZip = false;
 
+function fillToday(){
+
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth()+1; //January is 0!
+    var yyyy = today.getFullYear();
+
+    if(dd<10) {
+        dd='0'+dd
+    }
+
+    if(mm<10) {
+        mm='0'+mm
+    }
+
+    today = yyyy + '-' + mm + '-' + dd;
+
+    var dateField = document.getElementById('date');
+    dateField.setAttribute('value', today);
+}
+
+fillToday();//fill the date field with today's date
+
 // reading the zip data
 (function () {
     if (!window.FileReader || !window.ArrayBuffer) {
@@ -93,6 +116,7 @@ var isUsingZip = false;
     });
 })();
 
+// add the new title boxes when the user opens a zip file
 function addTitleFields(count, fileList){
 
     var titles = document.getElementById("titles");
@@ -113,18 +137,15 @@ function addTitleFields(count, fileList){
         newTitles.innerHTML += "<div style='margin-left:15px'><p><tr><td><b>Title (" + fileList[i] + "): </b></td><td><input type='text' id=" + "\"" + fileList[i] + "\"" + "size='20' value=\"" + tempFileName + "\"></td></tr></p></div>";
 
     }
-
-
-
 }
 
-
+// handles the xml formatting of the input
 function element(name, content, inner){
 
     var xml;
 
     if (!content){
-        xml='\t<' + name + '/>\n';
+        xml='\t<' + name + '></' + name + '>\n';
     }
     else if(content && !inner){
         xml='\t<'+ name + '>' + content + '</' + name + '>\n';
@@ -137,6 +158,7 @@ function element(name, content, inner){
     return xml;
 }
 
+//run when the user clicks the generate button
 $('#xml').click(function() {
 
     //var zip = new JSZip();
@@ -176,11 +198,7 @@ $('#xml').click(function() {
             header += element("title", $('#title').val());
 
             // alternate title
-            if($('#alttitle').val().length != 0){
-                header += element("alternateTitle", $('#alttitle').val(), "title");
-            }
-
-
+            header += element("alternateTitle", $('#alttitle').val(), "title");
 
             header += element("abstract",  $('#abstract').val());
 
@@ -200,31 +218,27 @@ $('#xml').click(function() {
             header += element("coordinates", $('#longitude').val() + ", " + $('#latitude').val());
 
             // alternate geometry
-            if($('#altgeometry').val().length != 0){
-                header += element("alternateGeometry", $('#altgeometry').val());
-            }
+            header += element("alternateGeometry", $('#altgeometry').val());
+
 
             // online resource
-            if($('#onlineresource').val().length != 0){
-                header += element("onlineResource", $('#onlineresource').val(), "resourceURL");
-            }
+            header += element("onlineResource", $('#onlineresource').val(), "resourceURL");
+
 
             // browse graphic
-            if($('#browsegraphic').val().length != 0){
-                header += element("browseGraphic", $('#browsegraphic').val(), "resourceURL");
-            }
+            header += element("browseGraphic", $('#browsegraphic').val(), "resourceURL");
+
 
             // collection date
-            if($('#altdate').val().length != 0){
-                header += element("dates", $('#altdate').val(), "date");
-            }
+            header += element("dates", $('#altdate').val(), "date");
+
+            // dataset ref date
+            header += element("datasetReferenceDate", $('#date').val());
 
             // vertical extent
-            if($('#vertical').val().length != 0){
-                header += element("verticalExtent", $('#vertical').val());
-            }
+            header += element("verticalExtent", $('#vertical').val());
 
-            header += element("datasetReferenceDate", $('#date').val());
+
             header += "</sample>";
 
 
@@ -318,31 +332,27 @@ $('#xml').click(function() {
                 header += element("coordinates", $('#longitude').val() + ", " + $('#latitude').val());
 
                 // alternate geometry
-                if($('#altgeometry').val().length != 0){
-                    header += element("alternateGeometry", $('#altgeometry').val());
-                }
+                header += element("alternateGeometry", $('#altgeometry').val());
+
 
                 // online resource
-                if($('#onlineresource').val().length != 0){
-                    header += element("onlineResource", $('#onlineresource').val(), "resourceURL");
-                }
+                header += element("onlineResource", $('#onlineresource').val(), "resourceURL");
+
 
                 // browse graphic
-                if($('#browsegraphic').val().length != 0){
-                    header += element("browseGraphic", $('#browsegraphic').val(), "resourceURL");
-                }
+                header += element("browseGraphic", $('#browsegraphic').val(), "resourceURL");
+
 
                 // collection date
-                if($('#altdate').val().length != 0){
-                    header += element("dates", $('#altdate').val(), "date");
-                }
+                header += element("dates", $('#altdate').val(), "date");
+
 
                 // vertical extent
-                if($('#vertical').val().length != 0){
-                    header += element("verticalExtent", $('#vertical').val());
-                }
+                header += element("verticalExtent", $('#vertical').val());
 
+                // dataset ref date
                 header += element("datasetReferenceDate", $('#date').val());
+
                 header += "</sample>";
 
                 zip.file(fileList[f].substring(0, fileList[f].lastIndexOf('.')) + "-xml.xml", header);//add the file to the zip in-memory
