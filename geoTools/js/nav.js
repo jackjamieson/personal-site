@@ -7,19 +7,19 @@ if(curPage === 'index.html')
 {
 	isActive = "active";
 }
-if(curPage === 'conversion.html' || curPage === 'fdmconvert.html' || curPage === 'atlas.html' || curPage === 'dmsdeg.html' || curPage === 'help.html'){
+if(curPage === 'conversion.html' || curPage === 'fdmconvert.html' || curPage === 'atlas.html' || curPage === 'dmsdeg.html' || curPage === 'help.html' || curPage === 'fdmhelp.html'){
 	isActive2 = "active";
 }
-if(curPage === '3ppops.html' || curPage === 'ww3pp.html'){
+if(curPage === '3ppops.html' || curPage === 'ww3pp.html' || curPage === 'ww3pphelp.html'){
 	isActive3 = "active";
 }
 if(curPage === 'exceltoKML.html' || curPage === 'formatters.html' || curPage === 'exceltoKMLPlacemarks.html'){
 	isActive4 = "active";
 }
-if(curPage === 'xmlgen.html'){
+if(curPage === 'xmlgen.html' || curPage === 'xmlhelp.html'){
 	isActive5 = "active";
 }
-if(curPage === 'kmlfmt.html'){
+if(curPage === 'kmlfmt.html' ||  curPage === 'kmlfmthelp.html'){
 	isActive6 = "active";
 }
 
