@@ -166,7 +166,7 @@ a span
 	z-index:2;
 }
 
-@media max-width 1140px {
+@media (max-width: 1140px) {
 	a:hover span
 	{
 		display:none;
@@ -224,7 +224,7 @@ a span
 	}
 }
 
-@media max-width 400px {
+@media (max-width: 400px) {
 	a:hover span
 	{
 		display:none;
